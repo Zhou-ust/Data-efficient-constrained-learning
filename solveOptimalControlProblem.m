@@ -1,4 +1,4 @@
-function [ x, u ] = solveOptimalControlProblem(plant, t, x_t, u_t, N, Qfun, XX, UU, UBounds, XBounds)
+function [ x, u ] = solveOptimalControlProblem(plant, t, x_t, u_t, N, Vfun, XX, UU, UBounds, XBounds)
 
 yalmip('clear')
 
@@ -7,7 +7,7 @@ m = size(UU,1);
 
 x = sdpvar(n*ones(1,N+1),ones(1,N+1));
 u = sdpvar(m*ones(1,N),ones(1,N));
-lambda = sdpvar(length(Qfun), 1);
+lambda = sdpvar(length(Vfun), 1);
 
 Constraints = [x_t == x{1}];
 
@@ -22,7 +22,7 @@ for i = 1:N
         Hu * u{i} <= bu;];
 end
 
-for i = 1:length(Qfun)
+for i = 1:length(Vfun)
     Constraints = [Constraints;
         lambda(i) >= 0;];
 end
@@ -30,7 +30,7 @@ end
 
 Constraints = [Constraints;
     x{N+1} == XX*lambda;                % Terminal point in the convex hull
-    ones(1,length(Qfun))*lambda == 1];  % Must be convex combination --> sum to 1
+    ones(1,length(Vfun))*lambda == 1];  % Must be convex combination --> sum to 1
 
 
 
@@ -41,7 +41,7 @@ for i = 1:N
 end
 
 % New cost function
-Cost = Cost + Qfun*lambda;
+Cost = Cost + Vfun*lambda;
 
 
 options = sdpsettings('solver','gurobi','verbose',0);
