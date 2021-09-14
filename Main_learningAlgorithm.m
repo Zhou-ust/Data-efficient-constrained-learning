@@ -27,14 +27,14 @@ u0 = u_cl(:,1);
 % % case2: Do not add constraints;
 % % case3: add constraints;
 
-% xmax = [inf;inf;inf]; xmin = [-inf;-inf;-inf]; deltaxmax = [inf;inf;inf]; deltaxmin = [-inf;-inf;-inf];
-xmax = [350;50;50]; xmin = [-50;-50;-50]; deltaxmax = [30;30;30]; deltaxmin = [-30;-30;-30];
+xmax = [inf;inf;inf]; xmin = [-inf;-inf;-inf]; deltaxmax = [inf;inf;inf]; deltaxmin = [-inf;-inf;-inf];
+% xmax = [350;50;50]; xmin = [-50;-50;-50]; deltaxmax = [30;30;30]; deltaxmin = [-30;-30;-30];
 
-% umax = inf; umin = -inf; deltaumax = inf; deltaumin = -inf;
+umax = inf; umin = -inf; deltaumax = inf; deltaumin = -inf;
 % umax = 100; umin = -100; deltaumax = inf; deltaumin = -inf;
-umax = 50; umin = -50; deltaumax = 30; deltaumin = -30;
-% emax = inf; emin = -inf;
-emax = 30; emin = -30;
+% umax = 50; umin = -50; deltaumax = 30; deltaumin = -30;
+emax = inf; emin = -inf;
+% emax = 30; emin = -30;
 
 
 UBounds = [umax umin deltaumax deltaumin];
