@@ -124,11 +124,6 @@ X9 = XX(1:n,Iter_index_X(10):Iter_index_X(10+1)-1);
 X10 = XX(1:n,Iter_index_X(11):end);
 
 % figure;
-RMSE = [sqrt(sum(X0(3,:).^2))/(Traillength+1) sqrt(sum(X1(3,:).^2))/(Traillength+1) sqrt(sum(X2(3,:).^2))/(Traillength+1) sqrt(sum(X3(3,:).^2))/(Traillength+1) ...
-    sqrt(sum(X4(3,:).^2))/(Traillength+1) sqrt(sum(X5(3,:).^2))/(Traillength+1) sqrt(sum(X6(3,:).^2))/(Traillength+1) ...
-    sqrt(sum(X7(3,:).^2))/(Traillength+1) sqrt(sum(X8(3,:).^2))/(Traillength+1) sqrt(sum(X9(3,:).^2))/(Traillength+1) ...
-    sqrt(sum(X10(3,:).^2))/(Traillength+1)];
-
 %%
 T = 0:size(X1(1,:),2)-1;
 
