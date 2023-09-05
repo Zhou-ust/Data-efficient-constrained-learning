@@ -94,6 +94,16 @@ end
 % Plot the Results
 % Run Plotting.m
 
+a0 = x_cl(:,1);
+Iter_index_X = 1;
+for ix = size(x_cl,2): size(XX,2)
+    if XX(:,ix) == a0
+    % if mod(ix, Traillength) == 0
+        ix;
+        Iter_index_X = [Iter_index_X, ix];
+    end 
+end
+
 % It depends on the iterations;
 n = size(x_cl,1);
 m = size(u_cl,1);
