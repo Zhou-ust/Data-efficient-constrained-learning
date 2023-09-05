@@ -15,25 +15,15 @@ Note that you can readily adapt these codes to your model after installing the s
 ### Citation
 You are more than welcome to use the code for your research if it is useful. If you use the code for 1) building the data-related learning control implementations; or/and 2) synthesizing the batch process controller, please cite the following paper:
 
-@article{zhou2021data,
- title={Data-efficient constrained learning for optimal tracking of batch processes},
- author={Zhou, Yuanqiang and Gao, Kaihua and Li, Dewei and Xu, Zuhua and Gao, Furong},
- journal={Industrial \& Engineering Chemistry Research},
- volume={60},
- number={43},
- pages={15658--15668},
- year={2021},
- publisher={ACS Publications}
-}
-
-    @article{zhong2023automata,
-      title={Automata-based controller synthesis for stochastic systems: A game framework via approximate probabilistic relations},
-      author={Zhong, Bingzhuo and Lavaei, Abolfazl and Zamani, Majid and Caccamo, Marco},
-      journal={Automatica},
-      volume={147},
-      pages={110696},
-      year={2023},
-      publisher={Elsevier}
+    @article{zhou2021data,
+      title={Data-efficient constrained learning for optimal tracking of batch processes},
+      author={Zhou, Yuanqiang and Gao, Kaihua and Li, Dewei and Xu, Zuhua and Gao, Furong},
+      journal={Industrial \& Engineering Chemistry Research},
+      volume={60},
+      number={43},
+      pages={15658--15668},
+      year={2021},
+      publisher={ACS Publications}
     }
 
 ### References
