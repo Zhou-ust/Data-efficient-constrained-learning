@@ -27,5 +27,5 @@ You are more than welcome to use the code for your research if it is useful. If 
     }
 
 ### References
-[1] **Y. Zhou**, K. Gao, D. Li, Z. Xu, & F. Gao, [Data-efficient constrained learning for optimal tracking of batch processes](https://doi.org/10.1021/acs.iecr.1c02706), In: Industrial & Engineering Chemistry Research, vol. 60, no. 43, 15658-15668, 2023.
+[1] **Y. Zhou**, K. Gao, D. Li, Z. Xu, & F. Gao, [Data-efficient constrained learning for optimal tracking of batch processes](https://doi.org/10.1021/acs.iecr.1c02706), In: Industrial & Engineering Chemistry Research, vol. 60, no. 43, pp. 15658-15668, 2023.
 
