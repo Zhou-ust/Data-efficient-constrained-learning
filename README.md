@@ -7,7 +7,7 @@ The following software/toolboxes for **MATLAB** are required for using the codes
  1. Multi-Parametric Toolbox 3: https://www.mpt3.org/;
  2. YALMIP: https://yalmip.github.io/;
  3. MOSEK(Version 9.3.6): https://www.mosek.com/;
- 4. Gurobi: https://www.gurobi.com/
+ 4. Gurobi: https://www.gurobi.com/;
 
 Note that you can readily adapt these codes to your model after installing the software/toolboxes above.
 
